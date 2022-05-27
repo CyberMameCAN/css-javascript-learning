@@ -1,0 +1,321 @@
+/****************************************
+		1. General Setting
+*****************************************/
+body {
+  background:  #e6f1c1 url(../images/body-bg.png) top repeat-x;
+  font: 16px/1.231 arial, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  color: #333;
+  line-height: normal;
+  text-align: center;
+}
+/** リンク *************************** **/
+a { color: #8000c0; text-decoration: none; }
+a:hover { color: #8000c0; text-decoration: underline; }
+
+/****************************************
+		2. ベースデザイン
+*****************************************/
+#whitebase {
+  margin: 0 auto;
+}
+#wrap {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h1 {
+}
+h2 {
+  font-weight: normal;
+  font-size: 21px;
+  margin-bottom: 0.5em;
+}
+h3 {
+}
+strong {
+  color: #f33;
+}
+em {
+  color: #00f;
+  font-style: normal;
+  font-weight: bold;
+}
+b {
+  color: #000;
+}
+.deco_underline {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+.deco_bgYellow {
+	background-color: #ff3;
+	color: #000;
+}
+.image_position {
+  text-align: center;
+}
+.image_position_right {
+  text-align: right;
+}
+.font_size_plus {
+	font-size: 23px;
+}
+.spacer25 { margin-bottom: 25px; }
+.spacer35 { margin-bottom: 35px; }
+
+/****************************************
+		3.  Header, Menu
+*****************************************/
+/** サイトヘッダ **************** **/
+#header {
+  margin: 20px auto 30px;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  text-align: left;
+}
+#site-name {
+  width: 420px;
+  margin-left: 0;
+  float: left;
+}
+#g-menu {
+  width: 500px;
+  float: right;
+  margin-top: 12px;
+}
+#g-menu li {
+  float: left;
+  width: 100px;
+  text-align: center;
+/*  border-left: 1px solid #ccc;*/
+  border-right: 1px solid #ccc;
+  padding: 4px 10px;
+  background: transparent url(../images/gmenu-bg.png);
+  border-radius: 3px;
+}
+#g-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#top-description {
+  clear: both;
+  text-align: left;
+}
+#top-description #site-description {
+  float: left;
+  margin: 0 0 40px 10px;
+  width: 420px;
+  color: #fff;
+  font-size: 18px; 
+}
+#top-description #banner {
+  float: right;
+  width: 500px;
+  text-align: center;
+}
+
+/****************************************
+	3.  コンテンツ
+*****************************************/
+#contents {
+  clear: both;
+  background-color: #fefaf0;
+  width: 100%;
+  text-align: left;
+/*  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;*/
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 10px;
+/*  box-shadow: 3px 3px 5px #ccc;*/
+}
+#contents #my-menu {
+  background: #fefaf0 url(../images/oshina-bottom.png) bottom no-repeat;
+}
+#contents #my-menu h2 {
+  margin: 0.5em 0;
+}
+#contents #my-menu .content-block {
+  padding: 20px;
+}
+#contents #update-box {
+  height: 250px;
+  background: #f7dbfd url(../images/update-bg.png) 1px 0px repeat-y;
+}
+#contents #update-box #blog {
+  float: left;
+  width: 310px;
+  margin: 0 15px;
+  overflow-y: scroll;
+  height: 230px;
+}
+#contents #update-box #blog li {
+  margin-bottom: 8px;
+}
+#contents #update-box #blog h2 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+#contents #update-box #blog .published {
+  font-size: 11px;
+  color: #fff;
+}
+#contents #update-box #blog a {
+  font-size: 13px;
+  color: #fff;
+}
+#contents #update-box #gallery {
+	float: right;
+	width: 580px;
+	margin: 0 -10px 0 0;
+}
+#contents #update-box #gallery h2 {
+  display: none;
+}
+#contents #mission {
+  clear: both;
+  padding: 1em;
+}
+
+#contents li {
+  margin-bottom: 1em;
+}
+#contents p {
+  margin-bottom: 2.5em;
+}
+#oshinagaki {
+}
+#oshinagaki p {
+  margin-bottom: 0.5em;
+}
+#oshinagaki h3 {
+  color: #0c2a00;
+  font-size: 15px;
+  margin-bottom: 0.5em;
+}
+#oshinagaki td {
+  padding-left: 90px;
+  padding-right: 10px;
+  padding-bottom: 35px;
+  width: 50%;
+  vertical-align: top;
+}
+#oshina-web-create {
+  background: transparent url(../images/oshina-1.png) 0 0 no-repeat;
+}
+#oshina-randing {
+  background: transparent url(../images/oshina-2.png) 0 0 no-repeat;
+}
+#oshina-web-lesson {
+  background: transparent url(../images/oshina-3.png) 0 0 no-repeat;
+}
+#oshina-writing {
+  background: transparent url(../images/oshina-4.png) 0 0 no-repeat;
+}
+#oshina-ameba {
+  background: transparent url(../images/oshina-5.png) 0 0 no-repeat;
+}
+#oshina-kaiun {
+  background: transparent url(../images/oshina-6.png) 0 0 no-repeat;
+}
+#oshina-web-create ul li {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #808080;
+}
+#oshinagaki .sub-text {
+  font-size: 12px;
+  color: #808080;
+}
+
+/****************************************
+	4.  フッタ
+*****************************************/
+#footer {
+  clear: both;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  background: #f7dbfd url(../images/footer-bg.png) bottom repeat-x;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+#atbat-team {
+  width: 100%;
+  font-size: 13px;
+  padding: 1em;
+}
+	#atbat-team:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	#atbat-team { display: inline-table; }
+	/* Hide from IE-mac \*/
+	* html #atbat-team { height: 1%; }
+	#atbat-team { display: block; }
+	/* End hide from IE-mac */
+#atbat-team h3 {
+  margin: 1em 0;
+}
+#atbat-team .teamBox {
+	float: left;
+	padding: 10px 25px;
+	width: 260px;
+}
+#atbat-team .takeColor ul, #atbat-team .nakaColor ul, #atbat-team .katoColor ul {
+	margin-left: 0;
+	list-style-type: circle;
+}
+#atbat-team ul li {
+  margin-bottom: 0.5em;
+  margin-left: 1.5em;
+}
+#atbat-team .takeColor ul li {
+	background: transparent url(images/list-icon-green.png) 0px 4px no-repeat;
+/*	padding-left: 20px;*/
+}
+#atbat-team .nakaColor ul li {
+	background: transparent url(images/list-icon-blue.png) 0px 4px no-repeat;
+/*	padding-left: 20px;*/
+}
+#atbat-team .katoColor ul li {
+	background: transparent url(images/list-icon-purple.png) 0px 4px no-repeat;
+/*	padding-left: 20px;*/
+}
+
+#atbat-team .entry-title {
+	text-indent: -9999px;
+	font-size: 8px;
+}
+#atbat-team .individual-title {
+	background: transparent url(images/individual-bg.png) bottom repeat-x;
+	font-weight: bold;
+}
+#atbat-team .colorPride { color: #333; }
+#atbat-team .entry-content {
+	clear: both;
+	padding: 12px 0 0 0;
+	overflow: auto;			/* ハック */
+	background: transparent url(images/one-column-bg.png) center repeat-y;
+}
+/*\*/
+　* html #atbat-team .entry-content { overflow: visible; }
+/**/
+
+/* 個人の色設定 */
+#atbat-team .colorTakeshita { color: rgb(51,153,102); }
+#atbat-team .colorNakazono { color: rgb(34,91,153); }
+#atbat-team .colorKato { color: rgb(227,0,225); }

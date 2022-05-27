@@ -1,0 +1,67 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+address, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset {
+  margin: 0;
+  padding: 0;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+address, em {
+  font-style: normal;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+em { font-style: normal; }
+/* 画像の下にできる隙間をなくす */
+img { vertical-align: bottom; }
+textarea { font-size: 100%; }
+/* IE 6 */
+table {
+	font-size: inherit;
+	font: 100%;
+	border-collapse: collapse;
+}
+/* IE */
+pre, code, kbd, samp, tt {
+	font-family: monospace;
+	*font-size: 108%;
+	line-height: 100%;
+}
+img {
+	line-height: 0;
+	border: none;
+}

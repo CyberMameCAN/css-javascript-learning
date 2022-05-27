@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    width: 100vw; /* 100% ブラウザいっぱい */
+    height: 100vh; /* 100% ブラウザいっぱい  */
+    background: linear-gradient(to right, rgba(136, 74, 165), rgb(192, 52, 0));
+    overflow: hidden;
+    position: relative; /* infomationの親として指定 */
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 20px, auto;
+    align-items: center;
+    font-weight: 550;
+    position: sticky;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.nav-links {
+    /* この方法でも右寄せにできる */
+    flex: 1;  /* 空いてるスペースの余白を強制的に入れてる。flex-growと同じ。 */
+    text-align: right;  /* インライン要素だから右寄せできる。a */
+}
+
+.nav-links ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 2rem;
+}
+.nav-links ul a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links ul a:hover {
+    color: rgb(266, 185, 97);
+}
+
+.logo-area {
+    margin-top: 12px;
+    margin-left: 12px;;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
+}
+
+.infomation {
+    width: 660px;
+    height: 1000px;
+    position: absolute; /* mainの子として指定 */
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 520px solid rgb(126, 182, 172); 
+    border-right: 520px solid transparent; 
+    border-bottom: 520px solid rgb(126, 182, 172); 
+    border-left: 520px solid #fff;
+    position: absolute;
+    left: -100px;
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    /* background: #ccc; */
+    position: absolute;
+    border-radius: 50%; /* 50%とすることで丸を作れる */
+    top: 0;
+    left: -100px;
+    transform: rotate(0deg); /* 最初は回転してない */
+    transition: .6s;
+}
+
+.feature {
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.feature img {
+    width: 70px;
+}
+.feature div {
+    margin-left: 20px;;
+}
+.feature div a {
+    margin-top: 8px;
+}
+
+.one {
+    top: 450px;
+    right: 70px;
+    /* transform: rotate(0deg); */
+}
+
+.two {
+    top: 100px;
+    left: 340px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 150px;
+    right: 370px;
+    transform: rotate(-270deg);
+}
+
+.pc {
+    width: 360px;
+    position: absolute; /* 親を基準に配置 */
+    top: 50%;
+    transform: translateY(-50%); /* 画像を小さくした分を、もとに戻す設定*/
+    left: 33.3%;
+    z-index: 1;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.control img {
+    width: 15%;
+}
+
+.control h3 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+
+#downBtn {
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+
