@@ -84,8 +84,6 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 参考キーワード）**高階関数**
 
 
-
-
 ## ループ
 
 ### forEach
@@ -110,3 +108,13 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 	localStorage.getItem('キー');
 
 localStorageでは文字列形式で保存されるため、**JSONに変換**した方が効率的
+
+### document.querySelector()
+
+指定されたセレクターまたはセレクター群に一致する、文書内の最初の Element を返す。  
+無ければ null を返す。
+
+### document.createElement()
+
+HTML 要素を生成  
+.appendChild() で追加
