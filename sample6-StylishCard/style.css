@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+
+.box {
+    width: 480px;
+    height: 640px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 2px 2px 10px gray;
+}
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    background: #09c;
+    width: 500px;
+    height: 600px;
+    margin-left: -250px;
+    margin-top: -200px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 20000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: yellow;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#cd3d6d, 1), rgba(#68b0f8, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
