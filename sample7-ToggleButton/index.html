@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Toggle Button | Dark and Light</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>(こちらをハンズオン)<br /><a href="https://www.youtube.com/watch?v=sX3Lw9xHdSk">Toggle Button In HTML CSS JavaScript | Dark and Light Mode</a></h1>
+    </header>
+
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+    <script>
+        const body = document.querySelector("body");
+        const toggle = document.getElementById("toggle");
+        toggle.onclick = function() {
+            toggle.classList.toggle("active")
+            body.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
