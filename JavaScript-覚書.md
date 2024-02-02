@@ -72,7 +72,7 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 - functionで定義
 
 1. アロー関数 **=>** （現在の主流）
-2. xxx = function () {}
+2. xxx = function () {とりあえず子の書き方を覚える異にする。}
 3. function xxx() {}
 
 ### 返り値がない関数
@@ -109,8 +109,9 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 
 localStorageでは文字列形式で保存されるため、**JSONに変換**した方が効率的
 
-### document.querySelector()
+### document.querySelector(), document.querySelectorAll()
 
+使えるようにする。
 指定されたセレクターまたはセレクター群に一致する、文書内の最初の Element を返す。  
 無ければ null を返す。
 
