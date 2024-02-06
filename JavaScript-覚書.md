@@ -1,5 +1,11 @@
 # JavaScript
 
+## キーワード
+
+- ES5
+- 現代はES6
+- Vanilla JS
+
 ## HTMLへ
 
 ### HTMLへ追加
@@ -74,6 +80,27 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 1. アロー関数 **=>** （現在の主流）
 2. xxx = function () {とりあえず子の書き方を覚える異にする。}
 3. function xxx() {}
+
+### アロー関数の書き方
+
+	const func = (x) => x * x;
+	const x=3;
+	console.log(func(x));
+	headingMenu();
+
+### よくある書き方
+
+	let upBtn = document.getElementById("upBtn");
+	// cssのcircle IDのtransform要素を取ってくる
+	let rotateValue = circle.style.transform;
+	let rotateSum;
+
+	upBtn.onclick = function () {
+		// 時計回りに+90°回転
+		rotateSum = rotateValue + "rotate(-90deg)";
+		circle.style.transform = rotateSum;
+		rotateValue = rotateSum
+	}
 
 ### 返り値がない関数
 **undefined**を返す
