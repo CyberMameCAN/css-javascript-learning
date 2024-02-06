@@ -8,37 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="study.css">
 <style>
-    .to-red {
-        color: red;
-        transition-duration: 2.5s;
-        transition-delay: 1.0s; /* 1秒後に開始 */
-        transition-timing-function: ease-out;
-        /*transition: でまとめて指定できる*/
-    }
-    .fadein {
-        /* position: absolute;
-        top: 0;
-        left: 0;
-        color: rgb(0,0,0);
-        opacity: 0; */
-        animation-name: fadein;
-        animation-duration: .5s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-    @keyframes fadein {
-        0% {
-            /* アニメーション開始時の指定 */
-            opacity: 0;
-            transform: translateY(0);
-        }
-        100% {
-            /* アニメーション終了時の指定 */
-            opacity: 1;
-            transform: translateY(20px);
-        }
-    }
 </style>
 </head>
 <body>
@@ -54,59 +25,8 @@
     <div class="trigger" style="margin-bottom: 20px;">クリックしてください</div>
     <div class="fadein" style="display: none;">文字がふわっと現れるよ！</div>
 
-
+<script src="study.js"></script>
 <script>
-    // 1
-    console.log(window.innerWidth);
-    console.log(window.innerHeight);
-    // 3
-    let heading1 = document.getElementById("hellow");
-    heading1.innerHTML = "Hello, World!"
-    // heading1.innerText = "Hello, World"
-    console.log(heading1.innerText)
-    // 4
-    const fruits = document.getElementById("fruits");
-    console.log(fruits.className); 
-    // 5
-    setTimeout(function() {
-        alert("アラート");
-    }, 2000);
-    // 6
-    const favarits = ["リンゴ", "メロン", "バナナ"];
-    console.log(favarits[1]);
-    // 7
-    const childCount = fruits.childElementCount;
-    console.log(childCount);
-    const elm = document.querySelectorAll("ul li");
-    console.log(elm.length)
-    // 8
-    heading1.classList.add("to-red");
-    // 9
-    // heading1.classList.remove("to-red");
-    // 11
-    let new_li_ele = document.createElement("li");
-    new_li_ele.textContent = "スイカ";
-    // fruits.prepend(new_li_ele); // 先頭に追加
-    // 12
-    fruits.appendChild(new_li_ele); // 末に追加
-    // 16
-    // const elem = document.getElementsByClassName("trigger");
-    const elem = document.querySelector(".trigger");
-    // function clickEvent() {
-    //     let target = document.getElementsByClassName("target");
-    //     target[0].style.display = "block";
-    // }
-    // elem[0].onclick = clickEvent;
-    // 無名関数をつかって
-    elem.addEventListener("click", function() {
-        // let target = document.getElementsByClassName("target");
-        let target = document.querySelector(".fadein");
-        if(target.style.display == "none") {
-            target.style.display = "block";
-        } else {
-            target.style.display = "none";
-        }
-    });
 </script>
 </body>
 </html>
