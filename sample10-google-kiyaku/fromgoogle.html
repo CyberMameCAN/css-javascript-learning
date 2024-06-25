@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google規約より</title>
+<link rel="stylesheet" href="css/default.css">
+<div class="whitebase">
+    <header class="site-header">
+        <div class="header-belt">
+            <h1 class="top-heading-text">HTML, CSS のコーディングを見直すページ</h1>
+        </div>
+        <div class="hello">
+            <img src="images/2289695091.jpg" height="200" alt="Hello">
+        </div>
+    </header>
+
+    <div id="main-contents">
+        <h2>参考にしたページ</h2>
+        <dl>
+            <dt><a href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a>
+            <dd>Googleの規約をもとに自分の知識と意識を改革
+            <dt><a href="https://qiita.com/pugiemonn/items/964203782e1fcb3d02c3">こんなHTMLとCSSのコーディング規約で書きたい</a>
+            <dd>こちらのページにGoogleの規約の事が書かれていたので興味を持ちました
+            <dt><a href="https://validator.w3.org/#validate_by_input">W3C Markup Validation Service</a>
+            <dd>いつもお世話になっております
+        </dl>
+
+        <h2>HTML</h2>
+        <p>私とは違ったルールを、改めるためにアウトプット</p>
+        <ul>
+            <li>&lt;script src="https://ajax.googleapis.com"&gt; httpsを指定
+            <li>&lt;script src="://ajax.googleapis.com"&gt; のように省略して指定しない
+        </ul>
+        <ul>
+            <li>h1, h2, h3等は順番がゴッチャでも大丈夫
+        </ul>
+        <ul>
+            <li>liタグは閉じなくてよい
+            <li>thead, tbody, tr, th, tdタグも同じ
+        </ul>
+        <ul>
+            <li>class属性を最優先
+            <li>id属性は出来るだけ使用を避ける
+        </ul>
+
+        <h2>CSS</h2>
+        <ul>
+            <li><b>.クラス名</b>の使用を推奨。
+            <li><b>li.クラス名</b>等の使い方をしない。パフォーマンスに影響。
+        </ul>
+        <ul>
+            <li>font, padding, margin等々、一遍に指定できるのは指定する</li>
+        </ul>
+        <ul>
+            <li><b>!important</b>の使用は避ける
+        </ul>
+    </div>
+</div>
+</html>

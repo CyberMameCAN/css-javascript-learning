@@ -1,0 +1,70 @@
+/* 0. ローカルリセット */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+/* 1. 基本設定 */
+
+html {
+    font-size: 62.5%;  /* ベースのフォントサイズを10pxに設定 */
+}
+
+body {
+    font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25em;
+    margin: 0;
+}
+
+/* 2. 個別定義 */
+.whitebase {
+    background: #123;
+    color: #fff;
+    padding: 1em;
+}
+
+.top-heading-text {
+    margin-bottom: 1em;
+}
+
+/* flex について */
+/*
+display: flex
+
+flex-wrap flexの折り返し
+  nowrap 折り返さない(デフォルト)
+  wrap 折り返す
+  wrap-reverse 逆から折り返す
+
+align-items
+  stretch 一番高い要素に合わせて伸びる(デフォルト)
+  normal stretchと同じ
+  center 中央寄せ
+  flex-start 上に寄せる
+  flex-end 下に寄せる
+  start flex-startと同じ
+  end flex-startと同じ
+  baseline ベースラインが一直線になるように配置
+
+justify-content 水平方向の位置とスペース調整
+  flex-start 左寄せ(デフォルト)
+  start flex-startと同じ
+  center 中央寄せ
+  flex-end 中央寄せ
+  space-evenly 均等に配置
+  space-between 均等に配置、最初のアイテムは先頭寄せ、最後のアイテムは末尾寄せ
+  space-around 均等に配置、各アイテムの両側に半分の大きさの間隔を置く
+*/
