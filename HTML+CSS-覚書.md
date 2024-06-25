@@ -45,6 +45,34 @@ css3では::は２つ
     - アニメーションの流れに沿ったキーフレーム（または中間地点）のスタイルを定義することによって、一連の CSS アニメーションの中間ステップを制御します。
     - from, to
 
+### Flex
+
+- display: flex
+
+- **flex-wrap** flexの折り返し
+  - **nowrap** 折り返さない(デフォルト)
+  - **wrap** 折り返す
+  - **wrap-reverse** 逆から折り返す
+
+- **align-items**
+  - **stretch** 一番高い要素に合わせて伸びる(デフォルト)
+  - **normal** stretchと同じ
+  - **center** 中央寄せ
+  - **flex-start** 上に寄せる
+  - **flex-end** 下に寄せる
+  - **start** flex-startと同じ
+  - **end** flex-startと同じ
+  - **baseline** ベースラインが一直線になるように配置
+
+- **justify-content** 水平方向の位置とスペース調整
+  - **flex-start** 左寄せ(デフォルト)
+  - **start** flex-startと同じ
+  - **center** 中央寄せ
+  - **flex-end** 中央寄せ
+  - **space-evenly** 均等に配置
+  - **space-between** 均等に配置、最初のアイテムは先頭寄せ、最後のアイテムは末尾寄せ
+  - **space-around** 均等に配置、各アイテムの両側に半分の大きさの間隔を置く
+
 ### position
 
 [MDN position](https://developer.mozilla.org/ja/docs/Web/CSS/position)
