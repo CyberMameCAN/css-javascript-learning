@@ -1,0 +1,40 @@
+// グリッドレイアウトの基本概念 下記サイトをハンズオン
+// https://developer.mozilla.org/ja/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+// 
+// margin-inlineとpadding-inlineの使い方など
+//
+.wrapper-0,
+.wrapper-1,
+.wrapper-2 {
+    margin-inline: auto;  // margin-left,right:autoの代替
+    padding-inline: max(5vw, 24px);  // 左右のpadding 大きい方を採用
+    column-gap: 10px;  // 横方向gap
+    row-gap: 1em;  // 下方向gap
+}
+
+.wrapper-0 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    div {
+        border: 1px solid #a33;
+        background-color: #caa;
+    }
+}
+
+.wrapper-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    div {
+        border: 1px solid #333;
+    }
+}
+
+.wrapper-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    div {
+        border: 1px solid #cc6;
+    }
+}
+

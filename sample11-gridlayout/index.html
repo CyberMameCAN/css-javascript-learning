@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+<link rel="stylesheet" href="css/default.css">
+<div class="container">
+    <section>
+        <h2>グリッド0</h2>
+        <pre>
+grid-template-columns: 200px 200px 200px;
+        </pre>
+        <div class="wrapper-0">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>グリッド1</h2>
+        <pre>
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 200px;
+        </pre>
+        <div class="wrapper-1">
+            <div>One</div>
+            <div>
+                Two
+                <p>より多くのコンテンツがあります。</p>
+                <p>これによって、高さが 100 ピクセルよりも高くなります。</p>
+            </div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>グリッド2</h2>
+        <pre>
+grid-template-columns: 2fr 1fr 1fr;
+        </pre>
+        <div class="wrapper-2">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+    </section>
+</div>
+</html>
