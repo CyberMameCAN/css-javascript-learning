@@ -1,0 +1,10 @@
+.rapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.stretcher {
+    width: stretch;
+    background-color:darkcyan;
+}
