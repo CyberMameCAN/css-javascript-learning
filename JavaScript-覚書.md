@@ -45,6 +45,11 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
   - 関数
   - etc...
 
+### 配列の書き方
+
+	int[] numbers = {1, 2, 3, 4, 5};
+
+
 ### オブジェクト
 
 	let user = {
@@ -78,7 +83,7 @@ circleというIDが付いたCSSのtransformという属性にXXを設定する�
 - functionで定義
 
 1. アロー関数 **=>** （現在の主流）
-2. xxx = function () {とりあえず子の書き方を覚える異にする。}
+2. xxx = function () {// だが、とりあえずこの書き方を覚える事にする}
 3. function xxx() {}
 
 ### アロー関数の書き方
